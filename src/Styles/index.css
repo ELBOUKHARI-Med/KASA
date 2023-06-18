@@ -1,0 +1,10 @@
+/* Import de la police de caractères Montserrat depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500&display=swap');
+
+/* Style de base pour le corps de la page */
+body {
+    margin: 0; /* Suppression des marges par défaut */
+    font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', sans-serif; /* Utilisation de la police Montserrat et des polices système de secours */
+    -webkit-font-smoothing: antialiased; /* Lissage des polices pour les navigateurs WebKit */
+    -moz-osx-font-smoothing: grayscale; /* Lissage des polices pour les navigateurs Firefox sur macOS */
+}

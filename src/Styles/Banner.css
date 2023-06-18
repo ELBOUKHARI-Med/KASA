@@ -1,0 +1,46 @@
+.banner-commun {
+    margin-top: 30px;
+    height: 223px;
+    color: var(--colorWhite);
+    border-radius: 25px;
+    
+}
+
+.banner {
+    background: url("../Assets/BackgroundFilter.png"), url("../Assets/BackgroundHome.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.banner2 {
+    background: url("../Assets/BackgroundFilter.png"), url("../Assets/Background.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    
+}
+
+.banner h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}
+
+/* Media query pour les écrans de taille inférieure ou égale à 768px */
+@media (max-width: 768px) {
+    .banner h1 { 
+        font-size: 1rem; /* Réduire la taille de la police du titre */
+    }
+    .banner, .banner2 {
+        margin-top: 0px; /* Supprimer la marge supérieure */
+        height: 111px; /* Réduire la hauteur du banner */
+        background-position: left; /* Modifier la position de l'arrière-plan */
+    }
+    .banner2, .banner, .banner-commun { 
+        border-radius: 10px; /* Réduire le rayon de la bordure arrondie */
+    }
+}
+

@@ -1,0 +1,70 @@
+.carousel {
+    position: relative;
+    height: 415px; /* Hauteur du carousel */
+    width: 100%;
+    margin-top: 30px; /* Marge supérieure */
+}
+
+.carousel p {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--colorWhite);
+    margin-top: 340px; /* Marge supérieure du paragraphe */
+    text-align: center;
+    text-shadow: 0px 0px 5px black; /* Ombre du texte */
+}
+
+.classImage {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 6px #b3b1b1;
+ /* Ombre autour de l'image */
+}
+
+.carousel button {
+    border: none;
+    background-color: transparent;
+    display: hidden;
+    color: var(--colorWhite);
+}
+
+.classChevronGauche {
+    position: absolute;
+    content: "";
+    color: var(--colorWhite);
+    inset: 0;
+    top: 40%; /* Position verticale du chevron gauche */
+    cursor: pointer;
+    left: 0;
+}
+
+.classChevronDroit {
+    position: absolute;
+    content: "";
+    inset: 0;
+    top: 40%; /* Position verticale du chevron droit */
+    cursor: pointer;
+    left: calc(100% - 50px); /* Position horizontale du chevron droit */
+}
+
+@media (max-width: 768px) {
+    .carousel { 
+        height: 255px; /* Hauteur du carousel pour les petits écrans */
+    }
+    .classChevronGauche { 
+        height: 30px; /* Hauteur du chevron gauche pour les petits écrans */
+    }
+    .classChevronDroit {
+        height: 30px; /* Hauteur du chevron droit pour les petits écrans */
+        left: calc(100% - 20px); /* Position horizontale du chevron droit pour les petits écrans */
+    }
+    .carousel p { 
+        top: 70%; /* Position verticale du paragraphe pour les petits écrans */
+    }
+}
