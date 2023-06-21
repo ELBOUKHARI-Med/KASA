@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { useParams, useSearchParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Navbar from "../Layout/Navbar";
 import Footer from "../Layout/Footer";
 import Container from "../Layout/Container";
@@ -12,12 +11,11 @@ import records from "../Datas/logements.json";
 const arrayStars = [1, 2, 3, 4, 5];
 
 function Accommodation() {
-  // récupère l'ID de l'URL
-  const [searchParams] = useSearchParams();
-  const [idLogement] = useState(searchParams.get('_id'));
+  // Utilisation de useParams pour récupérer l'ID de l'URL
+  const { id } = useParams(); 
 
   // cherche l'id dans le fichier logements.json
-  const record = records.find(element => element.id === idLogement);
+  const record = records.find(element => element.id === id);
 
   // si l'URL a été modifiée manuellement, redirection vers la page d'erreur
   if (!record) return (<ErrorPage />);

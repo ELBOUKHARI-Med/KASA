@@ -15,7 +15,7 @@ const Cards = () => {
         return (
           <div className="fiche-logement" key={id}>
             {/* Lien vers la page de détails du logement */}
-            <Link to={{ pathname: "/Logement", search: "?_id=" + id }}>
+            <Link to={`/logement/${id}`}>
               {/* Image de couverture du logement */}
               <img src={cover} alt={title} />
               {/* Titre du logement */}

@@ -12,7 +12,7 @@ function Routes() {
   const router = createBrowserRouter([
     { path: "/", element: <Home />, errorElement: <ErrorPage /> },
     { path: "/about", element: <About />, errorElement: <ErrorPage /> },
-    { path: "/logement", element: <Accommodation />, errorElement: <ErrorPage /> },
+    { path: "/logement/:id", element: <Accommodation />, errorElement: <ErrorPage /> },
     { path: "*", element: <ErrorPage /> }, // Toutes les routes non trouvées iront vers ErrorPage
   ]);
 
