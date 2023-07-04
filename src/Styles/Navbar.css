@@ -1,46 +1,82 @@
 /* Style de base pour la barre de navigation */
 .navbar {
-    height: 68px; /* Hauteur de la barre de navigation */
-    display: flex;
-    justify-content: space-between; /* Alignement des éléments à l'extrémité gauche et droite */
-    align-items: center; /* Alignement vertical des éléments au centre */
-  }
-  
-  .navbar img {
-    width: auto;
-    height: 68px; /* Hauteur de l'image de la barre de navigation */
-    margin-top: 10px; /* Marge supérieure de l'image */
-  }
-  
-  .navbar img:hover {
-    cursor: pointer; /* Curseur de souris en forme de main au survol de l'image */
-  }
-  
+  height: 68px;
+  /* Hauteur de la barre de navigation */
+  display: flex;
+  justify-content: space-between;
+  /* Alignement des éléments à l'extrémité gauche et droite */
+  align-items: center;
+  /* Alignement vertical des éléments au centre */
+  margin: 20px 40px;
+  /* Marge de 20px à gauche de la barre de navigation */
+
+}
+
+.navbar img {
+  width: auto;
+  height: 68px;
+  /* Hauteur de l'image de la barre de navigation */
+  margin-top: 10px;
+  /* Marge supérieure de l'image */
+
+}
+
+.navbar img:hover {
+  cursor: pointer;
+  /* Curseur de souris en forme de main au survol de l'image */
+}
+
+.navbar nav a {
+  display: flex;
+  color: var(--colorRed);
+  /* Couleur du texte des liens */
+  text-decoration: none;
+  /* Suppression du soulignement des liens */
+  font-size: 24px;
+  /* Taille de police des liens */
+}
+
+.navbar ul {
+  display: flex;
+  padding: 0px;
+  gap: 57px;
+  /* Espacement entre les éléments de la liste */
+
+  list-style: none;
+  /* Suppression des puces de liste */
+}
+
+.navbar ul li:hover {
+  cursor: pointer;
+  /* Curseur de souris en forme de main au survol des éléments de liste */
+
+}
+
+/* Media query pour les écrans de largeur maximale de 768px */
+@media (max-width: 768px) {
   .navbar nav a {
-    display: flex;
-    color: var(--colorRed); /* Couleur du texte des liens */
-    text-decoration: none; /* Suppression du soulignement des liens */
-    font-size: 24px; /* Taille de police des liens */
+    text-transform: uppercase;
   }
-  
+
+  /* Conversion du texte en lettres majuscules */
+  .navbar nav a {
+    font-size: 12px;
+  }
+
+  /* Taille de police réduite pour les liens */
   .navbar ul {
-      display: flex;
-      padding: 0px;
-      gap: 57px; /* Espacement entre les éléments de la liste */
-      list-style: none; /* Suppression des puces de liste */
+    gap: 10px;
   }
-  
-  .navbar ul li:hover { 
-      cursor: pointer; /* Curseur de souris en forme de main au survol des éléments de liste */
-   
+
+  /* Espacement réduit entre les éléments de la liste */
+  .navbar img {
+    height: 45px;
   }
-  
-  /* Media query pour les écrans de largeur maximale de 768px */
-  @media (max-width: 768px) {
-      .navbar nav a { text-transform: uppercase; } /* Conversion du texte en lettres majuscules */
-      .navbar nav a { font-size: 12px; } /* Taille de police réduite pour les liens */
-      .navbar ul {    gap: 10px; } /* Espacement réduit entre les éléments de la liste */
-      .navbar img {   height: 45px; } /* Hauteur d'image réduite pour les petits écrans */
-      .navbar nav {   justify-content: center; } /* Alignement des liens au centre */
+
+  /* Hauteur d'image réduite pour les petits écrans */
+  .navbar nav {
+    justify-content: center;
   }
-  
+
+  /* Alignement des liens au centre */
+}

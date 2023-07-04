@@ -14,8 +14,9 @@
 }
 
 /* Media query pour les écrans de taille inférieure à 800px */
-@media (max-width: 800px) { 
-    .about { 
-        padding-inline: 0; /* Supprime la valeur de padding horizontal */
+@media (max-width: 800px) {
+    .about {
+        padding-inline: 0;
+        /* Supprime la valeur de padding horizontal */
     }
 }

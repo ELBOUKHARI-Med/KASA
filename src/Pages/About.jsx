@@ -1,10 +1,6 @@
 import React from 'react';
-import Container from "../Layout/Container";
-import Navbar from "../Layout/Navbar";
 import Banner from '../Components/Banner';
-import Footer from "../Layout/Footer";
 import Collapse from '../Components/Collapse';
-
 import "../Styles/About.css";
 
 function About() {
@@ -18,21 +14,20 @@ function About() {
 
   return (
     <div className='flex'>
-      <Container>
-        <Navbar />
-        <Banner>
-          <div className="banner2 banner-commun"></div>
-        </Banner>
-        <div className='about'>
-          {/* Utilisation d'une boucle pour générer les composants Collapse */}
-          {sections.map((section, index) => (
-            <div key={index}>
-              <Collapse title={section.title} content={section.content} />
-            </div>
-          ))}
-        </div>
-      </Container>
-      <Footer />
+
+      <Banner>
+        <div className="banner2 banner-commun"></div>
+      </Banner>
+      <div className='about'>
+        {/* Utilisation d'une boucle pour générer les composants Collapse */}
+        {sections.map((section, index) => (
+          <div key={index}>
+            <Collapse title={section.title} content={section.content} />
+          </div>
+        ))}
+      </div>
+
+
     </div>
   );
 }

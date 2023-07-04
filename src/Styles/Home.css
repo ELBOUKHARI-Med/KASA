@@ -1,18 +1,24 @@
 /* Définition des variables de couleur */
 :root {
-    --colorRed: #FF6060; /* Couleur rouge */
-    --colorWhite: #fff; /* Couleur blanche */
+    --colorRed: #FF6060;
+    /* Couleur rouge */
+    --colorWhite: #fff;
+    /* Couleur blanche */
 }
 
 /* Style de base pour la balise html */
 html {
-    overflow: scroll; /* Affichage de la barre de défilement horizontale et verticale */
+    overflow: scroll;
+    /* Affichage de la barre de défilement horizontale et verticale */
 }
 
 /* Style de base pour le corps de la page */
 body {
-    -moz-box-sizing: border-box; /* Utilisation de la boîte à modèle border-box pour le calcul des dimensions */
+    -moz-box-sizing: border-box;
+    /* Utilisation de la boîte à modèle border-box pour le calcul des dimensions */
     box-sizing: border-box;
-    margin: 0; /* Suppression des marges par défaut */
-    padding: 0; /* Suppression des marges intérieures par défaut */
+    margin: 0;
+    /* Suppression des marges par défaut */
+    padding: 0;
+    /* Suppression des marges intérieures par défaut */
 }

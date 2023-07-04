@@ -1,34 +1,47 @@
 .footer {
-    margin-top: 10px; /* Marge en haut du footer */
+    margin-top: 10px;
+    /* Marge en haut du footer */
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 209px; /* Hauteur du footer */
-    background: black; /* Couleur de fond du footer */
-    color: var(--colorWhite); /* Couleur du texte du footer */
-    font-size: 24px; /* Taille de police du texte du footer */
+    height: 209px;
+    /* Hauteur du footer */
+    background: black;
+    /* Couleur de fond du footer */
+    color: var(--colorWhite);
+    /* Couleur du texte du footer */
+    font-size: 24px;
+    /* Taille de police du texte du footer */
 }
 
-.img_footer { 
-    margin: 0 auto; /* Centre l'image horizontalement */
-}
-.img_footer img { 
-    height: 60px; /* Hauteur de l'image du footer */
-    width: 163px; /* Largeur de l'image du footer */
+.img_footer {
+    margin: 0 auto;
+    /* Centre l'image horizontalement */
 }
 
-.copyright { 
-    height: 46px; /* Hauteur de l'élément .arr */
-    text-align: center; /* Centre le texte horizontalement */
+.img_footer img {
+    height: 60px;
+    /* Hauteur de l'image du footer */
+    width: 163px;
+    /* Largeur de l'image du footer */
 }
 
-.copyright p { 
-    margin-top: 10px; /* Marge en haut du paragraphe */
+.copyright {
+    height: 46px;
+    /* Hauteur de l'élément .arr */
+    text-align: center;
+    /* Centre le texte horizontalement */
+}
+
+.copyright p {
+    margin-top: 10px;
+    /* Marge en haut du paragraphe */
 }
 
 @media (max-width: 450px) {
-    .copyright p { 
-        font-size: 12px; /* Taille de police du paragraphe pour les petits écrans */
+    .copyright p {
+        font-size: 12px;
+        /* Taille de police du paragraphe pour les petits écrans */
     }
 }

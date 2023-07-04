@@ -1,5 +1,6 @@
 .error {
-    color: var(--colorRed); /* Couleur du texte d'erreur */
+    color: var(--colorRed);
+    /* Couleur du texte d'erreur */
 }
 
 .commun-error {
@@ -9,44 +10,56 @@
 }
 
 .error span {
-    font-size: 288px; /* Taille de police pour le span d'erreur */
+    font-size: 288px;
+    /* Taille de police pour le span d'erreur */
 }
 
 .error h4 {
-    font-size: 36px; /* Taille de police pour le titre h4 */
-    margin: 30px 0; /* Marge autour du titre h4 */
+    font-size: 36px;
+    /* Taille de police pour le titre h4 */
+    margin: 30px 0;
+    /* Marge autour du titre h4 */
 }
 
 .error a {
-    color: var(--colorRed); /* Couleur du lien d'erreur */
-    font-size: 18px; /* Taille de police pour le lien d'erreur */
-    text-decoration: underline; /* Soulignement du lien d'erreur */
+    color: var(--colorRed);
+    /* Couleur du lien d'erreur */
+    font-size: 18px;
+    /* Taille de police pour le lien d'erreur */
+    text-decoration: underline;
+    /* Soulignement du lien d'erreur */
 }
 
 .error p {
-    padding-top: 50px; /* Espacement en haut du paragraphe */
+    padding-top: 50px;
+    /* Espacement en haut du paragraphe */
 }
 
 @media (min-width: 401px) and (max-width: 550px) {
     .error span {
-        font-size: 180px; /* Taille de police pour le span d'erreur pour les écrans de taille moyenne */
+        font-size: 180px;
+        /* Taille de police pour le span d'erreur pour les écrans de taille moyenne */
     }
 }
 
 @media (max-width: 400px) {
     .error {
-        margin: auto 0; /* Centre le bloc d'erreur horizontalement pour les petits écrans */
+        margin: auto 0;
+        /* Centre le bloc d'erreur horizontalement pour les petits écrans */
     }
-    
+
     .error span {
-        font-size: 96px; /* Taille de police pour le span d'erreur pour les petits écrans */
+        font-size: 96px;
+        /* Taille de police pour le span d'erreur pour les petits écrans */
     }
-    
+
     .error h4 {
-        font-size: 18px; /* Taille de police pour le titre h4 pour les petits écrans */
+        font-size: 18px;
+        /* Taille de police pour le titre h4 pour les petits écrans */
     }
-    
+
     .error a {
-        font-size: 14px; /* Taille de police pour le lien d'erreur pour les petits écrans */
+        font-size: 14px;
+        /* Taille de police pour le lien d'erreur pour les petits écrans */
     }
 }

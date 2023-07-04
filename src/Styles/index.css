@@ -3,8 +3,12 @@
 
 /* Style de base pour le corps de la page */
 body {
-    margin: 0; /* Suppression des marges par défaut */
-    font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', sans-serif; /* Utilisation de la police Montserrat et des polices système de secours */
-    -webkit-font-smoothing: antialiased; /* Lissage des polices pour les navigateurs WebKit */
-    -moz-osx-font-smoothing: grayscale; /* Lissage des polices pour les navigateurs Firefox sur macOS */
+    margin: 0;
+    /* Suppression des marges par défaut */
+    font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', sans-serif;
+    /* Utilisation de la police Montserrat et des polices système de secours */
+    -webkit-font-smoothing: antialiased;
+    /* Lissage des polices pour les navigateurs WebKit */
+    -moz-osx-font-smoothing: grayscale;
+    /* Lissage des polices pour les navigateurs Firefox sur macOS */
 }

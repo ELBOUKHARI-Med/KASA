@@ -2,11 +2,17 @@
 .container {
     display: flex;
     flex-direction: column;
-    margin: 10px 100px; /* Marge externe du conteneur */
-    min-height: calc(100vh - 255px); /* Hauteur minimale du conteneur */
+    margin: 10px 100px;
+    /* Marge externe du conteneur */
+    min-height: calc(100vh - 255px);
+    /* Hauteur minimale du conteneur */
 }
 
 /* Media query pour les écrans de largeur maximale de 768px */
 @media (max-width: 768px) {
-    .container { margin-inline: 10px; } /* Marge horizontale réduite pour les petits écrans */
+    .container {
+        margin-inline: 10px;
+    }
+
+    /* Marge horizontale réduite pour les petits écrans */
 }

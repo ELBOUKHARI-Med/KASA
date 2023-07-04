@@ -7,11 +7,14 @@
 
 /* Liste visible dans la collapse */
 .visible.collapse ul {
-    color: var(--colorRed); /* Couleur du texte */
-    padding: 36px 27px 19px 18px; /* Espacement interne de la liste */
+    color: var(--colorRed);
+    /* Couleur du texte */
+    padding: 36px 27px 19px 18px;
+    /* Espacement interne de la liste */
     margin: 0;
     text-align: justify;
-    list-style-type: none; /* Suppression des puces */
+    list-style-type: none;
+    /* Suppression des puces */
 }
 
 /* Titre de la collapse */
@@ -20,8 +23,10 @@
     justify-content: space-between;
     margin-top: 20px;
     height: 28px;
-    background-color: var(--colorRed); /* Couleur de fond du titre */
-    color: var(--colorWhite); /* Couleur du texte du titre */
+    background-color: var(--colorRed);
+    /* Couleur de fond du titre */
+    color: var(--colorWhite);
+    /* Couleur du texte du titre */
     font-size: 18px;
     padding: 10px 20px 10px 20px;
     border-radius: 10px;
@@ -58,7 +63,8 @@
     margin: 0;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgb(193, 191, 191);
-    z-index: -1; /* Passe la zone de contenu sous la zone de titre */
+    z-index: -1;
+    /* Passe la zone de contenu sous la zone de titre */
 }
 
 .equipement-content {
@@ -74,6 +80,7 @@
 
     .visible.collapse ul {
         font-size: 12px;
-        padding: 23px 7px 5px 11.5px; /* J'ai mis 5px en bas au lieu de 1.3px pour une question esthétique */
+        padding: 23px 7px 5px 11.5px;
+        /* J'ai mis 5px en bas au lieu de 1.3px pour une question esthétique */
     }
 }
