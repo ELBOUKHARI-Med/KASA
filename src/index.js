@@ -1,8 +1,11 @@
-// Importe le module "routes" depuis le fichier "./Components/Routes"
-import routes from "./Components/Routes";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './Components/Routes'; // Importe le composant AppRoutes à la place de "routes"
+import './Styles/index.css'; // Importe le fichier de style CSS
 
-// Importe le fichier de style "./Styles/index.css"
-import "./Styles/index.css";
-
-// Charge les routes pour les différentes pages, ainsi que la page d'erreur
-routes();
+ReactDOM.render(
+  <React.StrictMode>
+    <App/>
+  </React.StrictMode>,
+  document.getElementById('root')
+);

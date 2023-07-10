@@ -7,8 +7,10 @@
   /* Alignement des éléments à l'extrémité gauche et droite */
   align-items: center;
   /* Alignement vertical des éléments au centre */
-  margin: 20px 40px;
-  /* Marge de 20px à gauche de la barre de navigation */
+  
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
 
 }
 
@@ -18,7 +20,7 @@
   /* Hauteur de l'image de la barre de navigation */
   margin-top: 10px;
   /* Marge supérieure de l'image */
-
+  cursor: pointer;
 }
 
 .navbar img:hover {
@@ -56,12 +58,10 @@
 @media (max-width: 768px) {
   .navbar nav a {
     text-transform: uppercase;
-  }
-
-  /* Conversion du texte en lettres majuscules */
-  .navbar nav a {
     font-size: 12px;
   }
+
+  
 
   /* Taille de police réduite pour les liens */
   .navbar ul {
@@ -76,6 +76,7 @@
   /* Hauteur d'image réduite pour les petits écrans */
   .navbar nav {
     justify-content: center;
+    
   }
 
   /* Alignement des liens au centre */

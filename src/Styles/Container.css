@@ -6,6 +6,7 @@
     /* Marge externe du conteneur */
     min-height: calc(100vh - 255px);
     /* Hauteur minimale du conteneur */
+    
 }
 
 /* Media query pour les écrans de largeur maximale de 768px */
