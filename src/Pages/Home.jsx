@@ -1,21 +1,14 @@
 import React from 'react';
-import Banner from '../Components/Banner';
-
 import Cards from '../Components/Cards';
-
-import "../Styles/Home.css";
+import "../Styles/Home.scss";
+import "../Styles/Banner.scss";
 
 function Home() {
     return (
         <div role="main">
-
-            {/* Rendre le composant Banner */}
-            <Banner>
-                <div className="banner banner-commun">
-                    <h1>Chez vous, partout et ailleurs</h1>
-                </div>
-            </Banner>
-
+            <div className="banner banner-commun">
+                <h1>Chez vous, partout et ailleurs</h1>
+            </div>
             {/* Rendre le composant Cards */}
             <Cards />
         </div>

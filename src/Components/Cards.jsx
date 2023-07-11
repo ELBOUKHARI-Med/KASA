@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import records from "../Datas/logements.json";
-import "../Styles/Cards.css";
+import "../Styles/Cards.scss";
 
-// Composant Cards pour afficher la liste des logements sous forme de cartes
+// composant qui permet de récupérer la liste des logements et de les afficher sous forme de card
 const Cards = () => {
   return (
     <div className="logements">
-      {/* Boucle sur la liste des logements */}
+      {/* liste les éléments de la base de données. */}
       {records.map((record) => {
         const { id, cover, title } = record;
 

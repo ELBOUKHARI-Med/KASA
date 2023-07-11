@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import chevronUp from "../Assets/ChevronUp.png";
 import chevronDown from "../Assets/ChevronDown.png";
-import "../Styles/Collapse.css";
+import "../Styles/Collapse.scss";
 
 function Collapse({ title, content }) {
   // Définit le collapse par défaut comme étant fermé

@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import chevronGauche from "../Assets/ChevronGauche.png";
 import chevronDroit from "../Assets/ChevronDroit.png";
-import "../Styles/Carousel.css";
+import "../Styles/Carousel.scss";
 
-function Carousel({ pictures }) {
-  const [index, setIndex] = useState(0); // Variable de compteur, initialisée à 0
+function Carousel({ pictures }) {//Cette fonction reçoit un tableau contenant les URL des images.
+
+  const [index, setIndex] = useState(0); //Cette variable de compteur est initialisée à 0 au départ.
   const totalPictures = pictures.length - 1; // Nombre maximal d'images
 
   if (index < 0) setIndex(totalPictures); // Si l'index est inférieur à zéro, le définir sur le nombre maximal d'images
@@ -21,11 +22,11 @@ function Carousel({ pictures }) {
       {totalPictures > 0 && (
         <div>
           {/* Boutons pour les flèches gauche et droite pour naviguer dans le carousel */}
-          <button onClick={() => setIndex(index - 1)}>
+          <button onClick={() => setIndex(index - 1)}> {/* DECREMENTE DE 1*/}
             {index}
             <img src={chevronGauche} className='classChevronGauche' alt={'flèche gauche pour changer de photo ' + index} />
           </button>
-          <button onClick={() => setIndex(index + 1)}>
+          <button onClick={() => setIndex(index + 1)}> {/* INCREMENTE DE 1 */}
             {index}
             <img src={chevronDroit} className='classChevronDroit' alt={'flèche droite pour changer de photo ' + index} />
           </button>

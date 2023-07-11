@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from "../Assets/LogoNoir.webp";
-import "../Styles/Footer.css";
+import "../Styles/Footer.scss";
 
 function Footer() {
   return (

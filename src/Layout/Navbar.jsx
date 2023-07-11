@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from "react-router-dom";
 import logo from '../Assets/logo.png';
-import '../Styles/Navbar.css';
+import '../Styles/Navbar.scss';
 
 function Navbar() {
   const isActiveStyle = { textDecoration: "underline" };

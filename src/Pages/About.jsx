@@ -1,7 +1,6 @@
 import React from 'react';
-import Banner from '../Components/Banner';
 import Collapse from '../Components/Collapse';
-import "../Styles/About.css";
+import "../Styles/About.scss";
 
 function About() {
   // Tableau de données pour les sections à afficher
@@ -14,10 +13,7 @@ function About() {
 
   return (
     <div className='flex'>
-
-      <Banner>
-        <div className="banner2 banner-commun"></div>
-      </Banner>
+      <div className="banner2 banner-commun"></div>
       <div className='about'>
         {/* Utilisation d'une boucle pour générer les composants Collapse */}
         {sections.map((section, index) => (
@@ -26,8 +22,6 @@ function About() {
           </div>
         ))}
       </div>
-
-
     </div>
   );
 }

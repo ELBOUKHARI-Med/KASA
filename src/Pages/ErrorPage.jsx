@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { Link } from "react-router-dom"
 
 
-import "../Styles/ErrorPage.css"
+import "../Styles/ErrorPage.scss"
 
 function ErrorPage() {
     return (
